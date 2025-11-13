@@ -13,6 +13,11 @@ provider "minio" {
   minio_password = "minioadmin"
 }
 
+resource "minio_s3_bucket" "tp1_bucket" {
+  bucket = "tp1-cloud-bucket"
+  acl    = "private"
+}
+
 resource "minio_s3_bucket" "web_bucket" {
   bucket = "webbucket"
   acl = "public"
