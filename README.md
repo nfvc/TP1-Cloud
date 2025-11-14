@@ -120,5 +120,9 @@ Pour accéder au site web statique hébergé dans le bucket `webbucket`, utilise
 http://localhost:9000/webbucket/index.html
 ```
 
+Screen shot de MinIO affichant les fichiers du bucket webbucket :
+
+![img.png](img.png)
+
 ## Quatrième étape : Secret et variables
 
