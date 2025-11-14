@@ -126,3 +126,27 @@ Screen shot de MinIO affichant les fichiers du bucket webbucket :
 
 ## Quatrième étape : Secret et variables
 
+Création du fichier `variables.tf` pour gérer les variables sensibles.
+
+Ainsi que le fichier `secrets.tfvars` pour stocker les valeurs sensibes dans mon cas : username et password.
+ACLs des buckets opti. 
+
+
+## Cinquième étape : Nettoyage
+
+
+Pour nettoyer les ressources créées, exécutez la commande suivante :
+
+```bash
+    opentofu destroy
+```
+![img_1.png](img_1.png)
+
+
+Recréez les buckets avec : 
+
+```bash
+    opentofu apply
+```
+
+![img_2.png](img_2.png)
